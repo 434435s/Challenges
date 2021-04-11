@@ -1,0 +1,13 @@
+name: Challenge-1
+main: challenge1.Challenge1
+version: 1.0
+api-version: 1.16
+commands:
+   greet:
+      description: Greets you, then asks how you are doing, you can specify a player to greet them as well.
+      usage: /greet
+      permission: c1.greet
+   dnb:
+      description: Gives you or a target diamonds and bricks!
+      usage: /dnb
+      permission: c1.dnb
