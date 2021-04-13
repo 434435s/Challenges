@@ -11,3 +11,7 @@ commands:
       description: Gives you or a target diamonds and bricks!
       usage: /dnb
       permission: c1.dnb
+   tsword:
+      description: Gives you a sword that spawns tnt on you.
+      usage: /tsword
+      permission: c1.tsword
