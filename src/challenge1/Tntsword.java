@@ -67,7 +67,10 @@ public class Tntsword implements CommandExecutor,Listener {
 	
 	@EventHandler(priority=EventPriority.HIGH)
 	public void onPlayerUse(PlayerInteractEvent useEvent) {
+		//Gets the player who caused the event
 		Player user = useEvent.getPlayer();
+		
+		//If players right clicks the air or ground, check if they are holding the correct item, if so, set tnt fuse ticks to 0, then spawn on player, repeat 5x
 		if(useEvent.getAction().equals(Action.RIGHT_CLICK_AIR) || useEvent.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
 			PersistentDataContainer handContainer = user.getInventory().getItemInMainHand().getItemMeta().getPersistentDataContainer();
 			if(handContainer.has(key, PersistentDataType.DOUBLE)) {
