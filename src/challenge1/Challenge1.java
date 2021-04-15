@@ -15,6 +15,7 @@ public class Challenge1 extends JavaPlugin{
 		this.getCommand("greet").setExecutor(new Greet());
 		this.getCommand("dnb").setExecutor(new Dnb());
 		this.getCommand("tsword").setExecutor(new Tntsword());
+		this.getCommand("warrior").setExecutor(new Warrior());
 		getServer().getPluginManager().registerEvents(new Tntsword(), this);
 		Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "" + ChatColor.BOLD + "Challenge1 has been enabled!");
 	}
